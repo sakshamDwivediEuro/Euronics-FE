@@ -1,24 +1,7 @@
 .sales-layout {
   display: flex;
-  height: 100vh;
   width: 100%;
   overflow: hidden;
-
-  // euro-left-pane {
-  //   flex: 0 0 250px; // fixed width when expanded
-  //   transition: flex-basis 0.3s ease;
-  //   overflow: hidden;
-  //   position: relative;
-
-  //   &.collapsed {
-  //     flex-basis: 50px; // collapsed width
-  //   }
-
-  //   &.collapsed-pane {
-  //     width: fit-content;
-  //     flex: unset;
-  //   }
-  // }
 
   euro-left-pane {
     flex-shrink: 0;
@@ -34,30 +17,6 @@
     }
   }
 
-  // main.content {
-  //   flex: 1; // always takes remaining width
-  //   display: flex;
-  //   flex-direction: column;
-  //   overflow: hidden;
-
-  //   .content-header {
-  //     height: 60px;
-  //     display: flex;
-  //     align-items: center;
-  //     justify-content: center;
-  //     background-color: #f1f3f5;
-  //     border-bottom: 1px solid #ddd;
-  //     font-weight: 500;
-  //   }
-
-  //   .content-body {
-  //     flex: 1;
-  //     overflow-y: auto;
-  //     padding: 20px;
-  //     background-color: #fafafa;
-  //   }
-  // }
-
   main.content {
     flex: 1; // fill remaining space
     transition: margin 0.3s ease;
@@ -70,22 +29,6 @@
       margin-right: 50px; // match right collapsed width
     }
   }
-
-  // euro-right-pane {
-  //   flex: 0 0 250px; // fixed width when expanded
-  //   transition: flex-basis 0.3s ease;
-  //   overflow: hidden;
-  //   position: relative;
-
-  //   .collapsed {
-  //     flex-basis: 50px; // collapsed width
-  //   }
-
-  //   &.collapsed-pane {
-  //     width: fit-content;
-  //     flex: unset;
-  //   }
-  // }
 
   euro-right-pane {
     flex-shrink: 0;

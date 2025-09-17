@@ -1,0 +1,34 @@
+@import "variables";
+@import "mixins";
+
+// Global Reset
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+// Theme Application
+:root {
+  @include theme($theme-light-map);
+}
+
+[data-theme="dark"] {
+  @include theme($theme-dark-map);
+}
+
+// Styling
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}

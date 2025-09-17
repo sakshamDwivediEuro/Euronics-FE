@@ -3,6 +3,7 @@ import { SHARED_IMPORTS } from '../../../../shared/shared-imports';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { ButtonComponent } from '../../../../shared/components/button/button.component';
 import { ButtonConfig } from '../../../../core/models/dynamics.model';
+import { CommonService } from '../../../../core/services/common.service';
 
 @Component({
   selector: 'euro-manage-pi',
@@ -12,16 +13,25 @@ import { ButtonConfig } from '../../../../core/models/dynamics.model';
   styleUrl: './manage-pi.component.scss',
 })
 export class ManagePiComponent {
-  toggleChecked: boolean = true;
+  toggleChecked: boolean = false;
+  myButtonConfig!: ButtonConfig;
+
+  constructor(private readonly commonService: CommonService) {
+    this.myButtonConfig = {
+      text: 'Primary euro',
+      type: 'submit',
+      disabled: false,
+      icon: 'bi bi-upload',
+      iconClass: 'ms-2',
+      // class: 'btn btn-warning btn-md btn-rounded btn-shadow',
+    };
+  }
+
   onsave() {
     console.log('clicked');
   }
-  myButtonConfig: ButtonConfig = {
-    text: 'Primary euro',
-    type: 'submit',
-    disabled: false,
-    icon: 'bi bi-upload',
-    iconClass: 'ms-2',
-    class: 'btn-md btn-rounded btn-shadow',
-  };
+
+  toggleTheme(event: any) {
+    this.commonService.darkTheme = event?.checked;
+  }
 }

@@ -1,3 +1,17 @@
+@import "../../../../styles/variables";
+
+.default-class {
+  background-color: $primary-dark;
+  color: $white;
+  outline: none;
+  border: none;
+  padding: 7px;
+  border-radius: 7px;
+  transition: background-color 0.2s ease;
+  &:hover {
+    background-color: darken($primary-dark, 10%);
+  }
+}
 .info-icon {
   font-size: 16px;
   cursor: pointer;

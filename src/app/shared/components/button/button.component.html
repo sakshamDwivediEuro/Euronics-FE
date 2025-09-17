@@ -1,6 +1,5 @@
 <button
-  class="btn btn-primary"
-  [ngClass]="config.class"
+  [ngClass]="config?.class ? config?.class : 'default-class'"
   [disabled]="config.disabled"
   [type]="config.type || 'button'"
   (click)="onClick($event)"

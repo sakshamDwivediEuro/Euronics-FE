@@ -75,8 +75,18 @@ export class CommonService {
   /**
    * Method to set and get the current CRM & it's role
    */
-
   get applicationUiData(): ApplicationUiData {
     return this._applicationUiData;
+  }
+
+  /**
+   * Method to set and get the current CRM & it's role
+   */
+  set darkTheme(isDarkMode: boolean) {
+    if (isDarkMode) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+      document.documentElement.removeAttribute('data-theme');
+    }
   }
 }

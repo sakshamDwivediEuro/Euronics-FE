@@ -1,0 +1,86 @@
+// Light Theme Mapping
+$theme-light-map: (
+  primary: #2563eb,
+  primary-dark: #1e40af,
+  primary-light: #60a5fa,
+  secondary: #0ea5e9,
+  accent: #f97316,
+
+  success: #22c55e,
+  error: #ef4444,
+  warning: #facc15,
+  info: #3b82f6,
+
+  bg: #f9fafb,
+  surface: #ffffff,
+  border: #e5e7eb,
+  text: #111827,
+  text-light: #374151,
+  text-muted: #6b7280,
+);
+
+// Dark Theme Mapping
+$theme-dark-map: (
+  primary: #60a5fa,
+  primary-dark: #2563eb,
+  primary-light: #93c5fd,
+  secondary: #38bdf8,
+  accent: #fb923c,
+
+  success: #4ade80,
+  error: #f87171,
+  warning: #fde047,
+  info: #60a5fa,
+
+  bg: #111827,
+  surface: #1f2937,
+  border: #374151,
+  text: #f9fafb,
+  text-light: #d1d5db,
+  text-muted: #9ca3af,
+);
+
+//hard-coded colors
+$white: white;
+$black: black;
+$primary: #60a5fa;
+$primary-dark: #2563eb;
+$primary-light: #93c5fd;
+$secondary: #38bdf8;
+
+// Spacing Scale
+$space-xxs: 0.25rem; // 4px
+$space-xs: 0.5rem; // 8px
+$space-sm: 0.75rem; // 12px
+$space-md: 1rem; // 16px
+$space-lg: 1.5rem; // 24px
+$space-xl: 2rem; // 32px
+$space-xxl: 3rem; // 48px
+
+// Typography
+$font-family-base: "Inter", "Roboto", sans-serif;
+$font-size-base: 1rem; // 16px
+$font-size-sm: 0.875rem; // 14px
+$font-size-lg: 1.125rem; // 18px
+$font-size-xl: 1.25rem; // 20px
+$line-height-base: 1.5;
+
+// Breakpoints
+$breakpoint-xs: 480px;
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+$breakpoint-2xl: 1536px;
+
+// Border Radius
+$radius-sm: 0.25rem; // 4px
+$radius-md: 0.5rem; // 8px
+$radius-lg: 0.75rem; // 12px
+$radius-full: 9999px;
+
+// Z-Index Scale
+$z-1000: 1000;
+$z-1100: 1100;
+$z-1200: 1200;
+$z-1300: 1300;
