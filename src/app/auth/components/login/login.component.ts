@@ -3,7 +3,7 @@ import { AuthService } from '../../../core/services/auth.service';
 import { LocalStorageService } from '../../../core/services/local-storage.service';
 
 @Component({
-  selector: 'app-login',
+  selector: 'euro-login',
   imports: [],
   standalone: true,
   templateUrl: './login.component.html',

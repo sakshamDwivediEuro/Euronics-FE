@@ -3,7 +3,7 @@ import { SHARED_IMPORTS } from '../../shared/shared-imports';
 import { SideBarList } from '../../core/models/common.model';
 
 @Component({
-  selector: 'app-left-pane',
+  selector: 'euro-left-pane',
   standalone: true,
   imports: [SHARED_IMPORTS],
   templateUrl: './left-pane.component.html',

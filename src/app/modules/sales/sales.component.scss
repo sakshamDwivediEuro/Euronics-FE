@@ -4,7 +4,7 @@
   width: 100%;
   overflow: hidden;
 
-  // app-left-pane {
+  // euro-left-pane {
   //   flex: 0 0 250px; // fixed width when expanded
   //   transition: flex-basis 0.3s ease;
   //   overflow: hidden;
@@ -20,7 +20,7 @@
   //   }
   // }
 
-  app-left-pane {
+  euro-left-pane {
     flex-shrink: 0;
     transition: width 0.3s ease;
 
@@ -71,7 +71,7 @@
     }
   }
 
-  // app-right-pane {
+  // euro-right-pane {
   //   flex: 0 0 250px; // fixed width when expanded
   //   transition: flex-basis 0.3s ease;
   //   overflow: hidden;
@@ -87,7 +87,7 @@
   //   }
   // }
 
-  app-right-pane {
+  euro-right-pane {
     flex-shrink: 0;
     transition: width 0.3s ease;
 

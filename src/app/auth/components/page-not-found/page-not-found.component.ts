@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { SHARED_IMPORTS } from '../../../shared/shared-imports';
 
 @Component({
-  selector: 'app-page-not-found',
+  selector: 'euro-page-not-found',
   imports: [SHARED_IMPORTS],
   standalone: true,
   templateUrl: './page-not-found.component.html',

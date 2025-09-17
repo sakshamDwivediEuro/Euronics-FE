@@ -1,13 +1,13 @@
 <div class="sales-layout">
   <!-- Left Pane -->
-  <app-left-pane
+  <euro-left-pane
     [tabs]="leftTabs"
     [collapsed]="isLeftCollapsed"
     (tabSelected)="onLeftTabSelected($event)"
     (collapseToggle)="toggleLeftPane($event)"
     [ngClass]="{ 'collapsed-pane': isLeftCollapsed }"
     class="left-pane"
-  ></app-left-pane>
+  ></euro-left-pane>
 
   <!-- Main Content -->
   <main class="content">
@@ -21,12 +21,12 @@
   </main>
 
   <!-- Right Pane -->
-  <app-right-pane
+  <euro-right-pane
     [tabs]="rightTabs"
     [collapsed]="isRightCollapsed"
     (tabSelected)="onRightTabSelected($event)"
     (collapseToggle)="toggleRightPane($event)"
     [ngClass]="{ 'collapsed-pane': isRightCollapsed }"
     class="right-pane"
-  ></app-right-pane>
+  ></euro-right-pane>
 </div>

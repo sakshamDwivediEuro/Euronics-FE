@@ -4,7 +4,7 @@ import { LoaderComponent } from './shared/components/loader/loader.component';
 import { CommonService } from './core/services/common.service';
 
 @Component({
-  selector: 'app-root',
+  selector: 'euro-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   standalone: true,

@@ -1,0 +1,36 @@
+<button
+  class="btn btn-primary"
+  [ngClass]="config.class"
+  [disabled]="config.disabled"
+  [type]="config.type || 'button'"
+  (click)="onClick($event)"
+>
+  <ng-container *ngIf="config?.iconPosition === 'before'">
+    <ng-container *ngIf="config?.icon">
+      <i [ngClass]="[config.icon, config?.iconClass, 'me-2']"></i>
+    </ng-container>
+    <ng-container *ngIf="config?.imageSrc">
+      <img
+        [src]="config.imageSrc"
+        alt="btn-icon"
+        class="btn-image me-2"
+        [ngClass]="[config?.iconClass]"
+      /> </ng-container
+  ></ng-container>
+
+  {{ config.text }}
+
+  <ng-container *ngIf="config?.iconPosition === 'after'">
+    <ng-container *ngIf="config?.icon">
+      <i [ngClass]="[config.icon, config?.iconClass, 'me-2']"></i>
+    </ng-container>
+    <ng-container *ngIf="config?.imageSrc">
+      <img
+        [src]="config.imageSrc"
+        alt="btn-icon"
+        class="btn-image me-2"
+        [ngClass]="[config?.iconClass]"
+      />
+    </ng-container>
+  </ng-container>
+</button>

@@ -7,7 +7,7 @@ import { CommonService } from '../../core/services/common.service';
 import { SideBarList } from '../../core/models/common.model';
 
 @Component({
-  selector: 'app-sales',
+  selector: 'euro-sales',
   standalone: true,
   imports: [LeftPaneComponent, RightPaneComponent, SHARED_IMPORTS],
   templateUrl: './sales.component.html',
