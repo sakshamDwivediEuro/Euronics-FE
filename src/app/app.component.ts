@@ -1,13 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { LoaderComponent } from './shared/components/loader/loader.component';
+import { CommonService } from './core/services/common.service';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
+  standalone: true,
+  imports: [RouterOutlet, LoaderComponent],
 })
 export class AppComponent {
-  title = 'Euronics-FE';
+  protected readonly title = 'Euronics-FE';
+
+  constructor(public commonService: CommonService) {}
 }

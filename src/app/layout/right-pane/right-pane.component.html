@@ -1,0 +1,41 @@
+<div class="pane-container" [class.collapsed]="collapsed">
+  <!-- Collapse Button -->
+  <button class="collapse-btn" (click)="toggleCollapse()">
+    {{ collapsed ? '⬅️' : '➡️' }}
+  </button>
+
+  <!-- Tabs -->
+  @if (tabs && tabs.length) {
+  <nav class="tabs-nav">
+    <ul>
+      @for (tab of tabs; track tab) {
+      <li>
+        @if (tab.type === 'button') {
+        <!-- Case: Button -->
+        <div class="tab-item button-tab" (click)="selectTab(tab)">
+          {{ tab.label }}
+        </div>
+        } @else {
+        <!-- Case: Nested -->
+        <div class="tab-item nested-tab" (click)="toggleAccordion(tab)">
+          <span>{{ tab.label }}</span>
+          <span class="arrow">{{ isExpanded(tab) ? '⬆️' : '⬇️' }}</span>
+        </div>
+
+        @if (isExpanded(tab)) {
+        <ul class="sub-list">
+          @for (sub of tab.subList; track sub) {
+          <li>
+            <div class="sub-item" (click)="selectTab(sub)">
+              {{ sub.label }}
+            </div>
+          </li>
+          }
+        </ul>
+        } }
+      </li>
+      }
+    </ul>
+  </nav>
+  }
+</div>
