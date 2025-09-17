@@ -1,0 +1,19 @@
+mat-slide-toggle {
+  width: 100px; /* total width of toggle */
+  height: 50px; /* total height */
+}
+
+mat-slide-toggle .mat-slide-toggle-bar {
+  height: 20px; /* bar height */
+}
+
+mat-slide-toggle .mat-slide-toggle-thumb {
+  width: 30px; /* thumb size */
+  height: 30px;
+}
+
+mat-slide-toggle {
+  --mat-slide-toggle-thumb-size: 35px;
+  --mat-slide-toggle-bar-height: 30px;
+  --mat-slide-toggle-checked-bar-color: #4caf50;
+}
