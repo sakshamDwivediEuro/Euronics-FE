@@ -1,0 +1,32 @@
+<div class="sales-layout">
+  <!-- Left Pane -->
+  <app-left-pane
+    [tabs]="leftTabs"
+    [collapsed]="isLeftCollapsed"
+    (tabSelected)="onLeftTabSelected($event)"
+    (collapseToggle)="toggleLeftPane($event)"
+    [ngClass]="{ 'collapsed-pane': isLeftCollapsed }"
+    class="left-pane"
+  ></app-left-pane>
+
+  <!-- Main Content -->
+  <main class="content">
+    <header class="content-header">
+      <h1>CRM Title</h1>
+    </header>
+
+    <section class="content-body">
+      <router-outlet></router-outlet>
+    </section>
+  </main>
+
+  <!-- Right Pane -->
+  <app-right-pane
+    [tabs]="rightTabs"
+    [collapsed]="isRightCollapsed"
+    (tabSelected)="onRightTabSelected($event)"
+    (collapseToggle)="toggleRightPane($event)"
+    [ngClass]="{ 'collapsed-pane': isRightCollapsed }"
+    class="right-pane"
+  ></app-right-pane>
+</div>
